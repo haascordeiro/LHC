@@ -1,0 +1,98 @@
+<html>
+  <head>
+    <title>Navigation Demo</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+      }
+
+      .container {
+        display: flex;
+        height: 100vh;
+      }
+
+      .sidebar {
+        width: 20%;
+        background-color:darkgrey;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 20px;
+        transition: width 0.5s;
+      }
+
+      .sidebar:hover {
+        width: 25%;
+      }
+
+      .sidebar a {
+        text-decoration: none;
+        color: black;
+        font-size: 20px;
+        margin-bottom: 10px;
+      }
+
+      .sidebar a:hover {
+        color: #555;
+      }
+
+      .submenu {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .submenu.show {
+        display: flex;
+      }
+
+      .content {
+        width: 80%;
+        height: 100%;
+        background-color: #fff;
+        padding: 20px;
+      }
+    </style>
+  </head>
+  
+  <body>
+    <div class="container">
+      <div class="sidebar">
+        <a href="#">Sobre</a>
+        <br>
+        <a href="#" onclick="toggleSubmenu(event, 'literatura')">Literatura</a>
+        <div class="submenu" id="literatura">
+          <a href="#"><em>Sussuro&Codeína</em></a>
+          <a href="#"><em>Seis Vozes para a Fuga</em></a>
+          <a href="#"><em>Pavão de Seis Cores</em></a>
+          <a href="#"><em>Absoleto</em></a>
+          <a href="#"><em>Nouvelle World</em></a>
+          <a href="#"><em>Outros textos</em></a>
+        </div>
+        <br>
+        <a href="#" onclick="toggleSubmenu(event, 'critica')">Crítica</a>
+        <div class="submenu" id="critica">
+          <a href="#"><em>Poesia</em></a>
+          <a href="#"><em>Ficção</em></a>
+        </div>
+        <br>
+        <a href="#">Galeria</a>
+      </div>
+      <div class="content">
+        <h1>Welcome to my website</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam tincidunt consequat semper. Sed consequat, elit sed auctor auctor, velit neque semper nunc, sed maximus purus elit sed velit. Morbi lacinia ante et tortor finibus, quis fringilla enim congue. Integer sodales tellus a libero accumsan, eu malesuada justo congue. Vestibulum ac erat non enim molestie convallis vel vel nisi. In vitae hendrerit nisl. Duis nec elit odio. Sed in arcu id risus malesuada tempor. Etiam tempor, nulla quis aliquam dapibus, erat tortor vestibulum mauris, vel bibendum neque tortor sit amet nisl.</p>
+      </div>
+    </div>
+
+    <script>
+      function toggleSubmenu(event, submenuId) {
+  event.preventDefault();
+  const submenu = document.getElementById(submenuId);
+  submenu.classList.toggle('show');
+}
+</script>
+</body>
+</html>
+       
