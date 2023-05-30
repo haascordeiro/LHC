@@ -1,0 +1,174 @@
+<html>
+  <head>
+    <title>sussurro&codeína</title>
+    <style>
+     
+      body {
+        margin: 0;
+        padding: 0;
+      }
+
+      .container {
+        display: flex;
+        min-height: 100vh;
+        position: relative;
+      }
+
+      .sidebar {
+        width: 15%;
+        background-color: darkgrey;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 20px;
+        transition: width 0.5s;
+      }
+
+      .sidebar:hover {
+        width: 25%;
+      }
+
+      .sidebar a {
+        text-decoration: none;
+        color: black;
+        font-size: large;
+        margin-bottom: 10px;
+      }
+
+      .sidebar a:hover {
+        color: #555;
+      }
+
+      .submenu {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .submenu.show {
+        display: flex;
+      }
+
+      .content {
+        width: 85%;
+        background-color: #fff;
+        padding: 20px;
+        margin-right: 10%;
+        font-size: large;
+      }
+
+      .emphasis {
+        display:flex;
+        font-size:xx-large;
+        font-style: italic;
+        justify-content: center;
+      }
+
+      .legenda{
+        display:flex;
+        font-size:medium;
+        font-style: italic;
+        justify-content: center;
+      }
+
+      img {
+        max-width: 300px;
+        height: auto;
+        margin-left: 30%;
+      }
+
+      #header-iframe {
+        width: 100%;
+        height: 35%;
+        border: none;
+      }
+
+      a {
+        color:white
+        }
+
+      footer {
+        position:absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        background-color:black;
+        color:white;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: small;
+        font-weight: bold;
+        padding:10px;
+        }
+
+    </style>
+  </head>
+  <body>
+    <header>
+        <iframe id="header-iframe" src="reveal/h_sussurro.html"></iframe>
+    </header>
+    <div class="container">
+      <div class="sidebar">
+        <br>
+        <br>
+        <a href="index.html"><u>Sobre</u></a>
+        <br>
+        <a href="#" onclick="toggleSubmenu(event, 'literatura')"><u>Literatura</u></a>
+        <div class="submenu" id="literatura">
+          <a href="#"><em>Sussuro&Codeína</em></a>
+          <a href="#"><em>Seis Vozes para a Fuga</em></a>
+          <a href="#"><em>Pavão de Seis Cores</em></a>
+          <a href="#"><em>Absoleto</em></a>
+          <a href="#"><em>Nouvelle World</em></a>
+          <a href="#"><em>Outros textos</em></a>
+        </div>
+        <br>
+        <a href="galeria.html"><u>Galeria</u></a>
+      </div>
+
+      <div class="content">
+        
+        <h3>Resenha de Carlos Machado</h3>
+        <p>A sutileza de um sussurro. A acidez da codeína. A textura da paixão mergulhada em uísque e soda cáustica. O despetalar de flores. O intuito da eternidade. 
+          Palavras que são como apaixonantes erupções de sentimentos; um poeta menor na idade e maior na poesia, que se encontra em plena ascensão rumo ao corpo:
+          um livro que é um tapa na cara dos desavisados ou uma carícia no rosto da amada. Eis o poeta.</p>
+        <p>É com esses ingredientes que Lucas Haas Cordeiro estreia na literatura. <em>Sussuro&Codeína</em> é um livro que chama o leitor para bater um papo de perto,
+          cara a cara, sem a hipocrisia de qualquer sentimento de culpa. É um toma-lá-dá-cá:</p> 
+        <div class="emphasis">"Três beijos, uma paixão"</div>
+        <p>Porrada do começo ao fim. O poeta segura na mão do espectador e o empurra para dentro da ação em um só movimento: <em>"Luzes, câmera, ação!"</em>
+          E a partir daí escrever se torna um <em>"hábito maravilhoso de escarrar arte"</em> e entrar para a história.</p>
+        <p>Com esse trabalho, Cordeiro vai ao encontro do que há de melhor na poesia contemporânea brasileira.
+          Apóia-se na marginalidade das palavras, na moderna ênfase visual, no tumulto contemporâneo, nas múltiplas vozes, na metapoesia,
+          no lirismo satírico, ou melhor, <em>salírico</em>, e atinge um soco no âmago do leitor. Um texto habilmente em movimento:</p>
+        <div class="emphasis">"Olhos que se fecham, só para bocas que se abrem",</div>
+        <p>insigante: <em>"Termino o dia com uma dúvida e uma certeza: estou apaixonado"</em>,
+          crítico: <em>"Associaçõe$ Financeira$ de Ensino Terceirizado Senhor Dábouiú-buchi: é o saber dos novos tempos"</em>,
+          irônico: <em>"cabo de vassoura que na noite é bendita companhia"</em> e que transpira espontaneidade:
+          <em>"Seria aniversário, não fosse a felicidade"</em></p>
+        <p>Lucas Haas Cordeiro prepara seu ópio e nos oferece de bandeja, uma <em>"poesia lírica crua mordaz picante maldizente
+          irônica apaixonada"</em>. Deite, meu caro, esparrame-se por sobre o corpo das palavras. Caso sussurre de dor, use codeína.</p>
+        <br>
+          <img src="https://haascordeiro.neocities.org/images/galeria/sussurro.jpg">
+        <br>
+        <br>
+        <div class="legenda">para Tiago Cordeiro & Caetano Negrão, para os amores e ilusões.</div>
+        <br>
+        <br>
+      </div>
+  
+    <footer>
+        <a href="mailto:luc.cordeiro@gmail.com"><em>luc.cordeiro@gmail.com<em></a>
+    </footer>
+
+    <script>
+      function toggleSubmenu(event, submenuId) {
+        event.preventDefault();
+        const submenu = document.getElementById(submenuId);
+        submenu.classList.toggle('show');
+      }
+    </script>
+  </body>
+</html>
