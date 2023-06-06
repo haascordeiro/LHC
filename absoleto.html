@@ -1,0 +1,189 @@
+<html>
+  <head>
+    <meta charset='UTF-8'>
+    <title>absoleto</title>
+    <style>
+     
+      body {
+        margin: 0;
+        padding: 0;
+      }
+
+      .container {
+        display: flex;
+        min-height: auto;
+        position: relative;
+        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      }
+
+      .sidebar {
+        width: 15%;
+        background-color: darkgrey;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 20px;
+        transition: width 0.5s;
+      }
+
+      .sidebar:hover {
+        width: 25%;
+      }
+
+      .sidebar a {
+        text-decoration: none;
+        color: black;
+        font-size: large;
+        margin-bottom: 10px;
+      }
+
+      .sidebar a:hover {
+        color: #555;
+      }
+
+      .submenu {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .submenu.show {
+        display: flex;
+      }
+
+      .content {
+        width: 85%;
+        background-color: #fff;
+        padding: 20px;
+        margin-left: 5%;
+        margin-right: 10%;
+        font-size: large;
+        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      }
+
+      .emphasis {
+        display:flex;
+        font-size:xx-large;
+        font-style: italic;
+        justify-content: center;
+      }
+
+      .legenda{
+        display:flex;
+        font-size:medium;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      img {
+        max-width: 450px;
+        height: auto;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      #header-iframe {
+        width: 100%;
+        height: 35%;
+        border: none;
+      }
+
+      a {
+        color:crimson;
+        }
+
+      footer {
+        position:absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        background-color:black;
+        color:white;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: small;
+        font-weight: bold;
+        padding:10px;
+        }
+
+    </style>
+  </head>
+  <body>
+    <header>
+        <iframe id="header-iframe" src="reveal/h_absoleto.html"></iframe>
+    </header>
+    <div class="container">
+      <div class="sidebar">
+        <br>
+        <br>
+        <a href="index.html"><u>Sobre</u></a>
+        <br>
+        <a href="#" onclick="toggleSubmenu(event, 'literatura')"><u>Literatura</u></a>
+        <div class="submenu" id="literatura">
+          <a href="sussurro.html"><em>Sussuro&Codeína</em></a>
+          <a href="seis vozes para a fuga.html"><em>Seis Vozes para a Fuga</em></a>
+          <a href="pavao de seis cores.html"><em>Pavão de Seis Cores</em></a>
+          <a href="absoleto.html"><em>Absoleto</em></a>
+          <a href="nouvelle world.html"><em>Nouvelle World</em></a>
+          <a href="outros textos.html"><em>Outros textos</em></a>
+        </div>
+        <br>
+        <a href="galeria.html"><u>Galeria</u></a>
+      </div>
+
+      <div class="content">
+        <h3><u>Mídias</u></h3>
+        <p>Acesse o audiobook da obra: <a href="https://soundcloud.com/user-628016153-328800658/sets/absoleto" target="_blank"><em>Absoleto_soundcloud</em></a>.</p>
+        <p>Interaja com as ilustrações digitais da obra: <a href="https://openprocessing.org/user/95506/?view=sketches&o=3#sketches" target="_blank"><em>Ilustrações</em></a>.</p>
+        <br>
+        <div class="emphasis">***</div>
+        <br>
+        <h3><u>Prefácio de Jorge Sesarino</u></h3>
+        <h4><em>doutor em Ciências Psicológicas pela Université de Liège</em></h4>
+        <p>Lucas Haas Cordeiro é escritor e poeta, sabe disso e sua intimidade com a palavra é singular.
+          Ele cria, inventa, desinventa, constrói, desconstrói, toca o ser. O poeta faz amor com as palavras;
+          não se serve de palavras, antes serve a palavra. Assim, a poesia é uma tentativa desesperada de dizer o indizível,
+          sendo por isso a arte do impossível, mas que mesmo assim faz-se possível dizer para muito além do que comumente se diz:
+          o poeta fala a linguagem do impossível de dizer. Para Aristóteles, "a poesia é a mãe de todas as artes escritas".
+          Falando de poesia, Hölderin disse que "o desejo é que as palavras se abram como flores".
+          Na etimologia da palavra, poesia vem do grego "poiesis", que significa ação, criação, gestação; trata-se de um fazer com as palavras.
+          As palavras têm pode alucinatório, articulam o desejo inconsciente e afetam a alma quando se devolve a elas o seu feitiço originário.
+          Ela faz corpo, ela é antes do corpo, é a pulsão cravada no corpo, mas é também o que preenche os espaços entre os corpos
+          quando a mãe, com sua "Palavra-Dom-de-Amor", enlaça o grito do bebê, fazendo a primeira poesia.</p>
+        <p>A poesia é a arte da escrita e a arte não é idealização, é a sublimação, por isso a arte não socializa, ela subverte e marginaliza.
+          Heidegger dizia que a poesia é como um sonho, mas sem nenhuma realidade, um jogo de palavras sem a seriedade da ação.
+          A poesia é revelação e tratamento poético da linguagem que articula palavra e corpo. A poesia revela como o corpo sente a palavra
+          e como a palavra ressoa no corpo. Jaques Lacan, no <em>Seminário 25</em>, disse que a poesia está do lado do analisante:
+          "o analisante fala, faz poesia". A poesia de Lucas Haas Cordeiro toca o corpo quando ele diz: 
+          "corpo que pulsa - mas pulsa em lento, pulsa em ré - pulsa em asa", ou quando diz: 
+          "o primeiro corpo era cru da angústia, da angústia mais pura, que se bebe em leite de mãe".
+          Num deslize quase metonímico entre o amor e o desejo, o autor parece homenagear grandes poetas em seus estilos.</p>
+        <div class="emphasis">Iluminado pela letra,</div>
+        <div class="emphasis">escreve e faz a letra num deslize metonímico</div>
+        <div class="emphasis">para dizer do seu invisível.</div>
+        <p>Assim, serve a palavra para que ela diga do seu impossível do dizer.</p>
+        <br>
+          <img src="https://haascordeiro.neocities.org/images/galeria/absoleto_dentro.jpg">
+        <br>
+        <br>
+        <div class="legenda"><em>os moralopagitas & os sintomas.</em></div>
+        <br>
+        <br>
+      </div>
+  
+    <footer>
+        <u><em>luc.cordeiro@gmail.com</em></u>
+    </footer>
+
+    <script>
+      function toggleSubmenu(event, submenuId) {
+        event.preventDefault();
+        const submenu = document.getElementById(submenuId);
+        submenu.classList.toggle('show');
+      }
+    </script>
+  </body>
+</html>

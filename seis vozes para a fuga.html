@@ -1,0 +1,274 @@
+<html>
+  <head>
+    <meta charset='UTF-8'>
+    <title>seis vozes para a fuga</title>
+    <style>
+     
+      body {
+        margin: 0;
+        padding: 0;
+      }
+
+      .container {
+        display: flex;
+        min-height: auto;
+        position: relative;
+        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      }
+
+      .sidebar {
+        width: 15%;
+        background-color: darkgrey;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 20px;
+        transition: width 0.5s;
+      }
+
+      .sidebar:hover {
+        width: 25%;
+      }
+
+      .sidebar a {
+        text-decoration: none;
+        color: black;
+        font-size: large;
+        margin-bottom: 10px;
+      }
+
+      .sidebar a:hover {
+        color: #555;
+      }
+
+      .submenu {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .submenu.show {
+        display: flex;
+      }
+
+      .content {
+        width: 85%;
+        background-color: #fff;
+        padding: 20px;
+        margin-left: 5%;
+        margin-right: 10%;
+        font-size: large;
+        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      }
+
+      .emphasis {
+        display:flex;
+        font-size:xx-large;
+        font-style: italic;
+        justify-content: center;
+      }
+
+      .legenda{
+        display:flex;
+        font-size:medium;
+        font-style: italic;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      img {
+        max-width: 300px;
+        height: auto;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      #header-iframe {
+        width: 100%;
+        height: 35%;
+        border: none;
+      }
+
+      a {
+        color:white
+        }
+
+      footer {
+        position:absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        background-color:black;
+        color:white;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: small;
+        font-weight: bold;
+        padding:10px;
+        }
+
+    </style>
+  </head>
+  <body>
+    <header>
+        <iframe id="header-iframe" src="reveal/h_seis_vozes.html"></iframe>
+    </header>
+    <div class="container">
+      <div class="sidebar">
+        <br>
+        <br>
+        <a href="index.html"><u>Sobre</u></a>
+        <br>
+        <a href="#" onclick="toggleSubmenu(event, 'literatura')"><u>Literatura</u></a>
+        <div class="submenu" id="literatura">
+          <a href="sussurro.html"><em>Sussuro&Codeína</em></a>
+          <a href="seis vozes para a fuga.html"><em>Seis Vozes para a Fuga</em></a>
+          <a href="pavao de seis cores.html"><em>Pavão de Seis Cores</em></a>
+          <a href="absoleto.html"><em>Absoleto</em></a>
+          <a href="nouvelle world.html"><em>Nouvelle World</em></a>
+          <a href="outros textos.html"><em>Outros textos</em></a>
+        </div>
+        <br>
+        <a href="galeria.html"><u>Galeria</u></a>
+      </div>
+
+      <div class="content">
+        
+        <h3><u>Sobre</u></h3>
+        <p>A evidente monocronia do cenário já não esconde as diferentes nuances dos personagens. 36 vozes se entrechocam em Curitiba.
+          Psicanalistas, prostitutas, estudantes, professores, políticos, padras e alquimistas dividem as ruas de uma cidade que camufla toda violência,
+          onde a religião transborda como redenção impossível. Durante 21 dias, irrompem histórias de amor, reencontros e desespero. 
+          Os personagens se defrontam com a mística dos sonhos, enlouquecem, mergulham na religiosidade da experiência enteógena, dialogam
+          com o leitor sobre os caminhos da arte e debatem a diversidade sexual como expressão identitária. A simetria dos textos orquestra as notas
+          de uma fuga conturbada e múltipla, caracterizada pela profundidade psicológica e pelo confronto de persectivas. <em>Seis vozes para a Fuga</em>
+          é um livro que se abre a incontáveis leituras, das quais o leitor por certo não sairá indiferente.</p>
+        <br>
+          <img src="https://haascordeiro.neocities.org/images/galeria/seis_vozes.jpg">
+        <br>
+        <br>
+        <div class="legenda">Di quest'onda che rifluische dai ricordi</div>
+        <div class="legenda">la città s'imbeve come una spugna e si dilata.</div>
+        <br>
+        <div class="legenda">Italo Calvino</div>
+        <br>
+        <br>
+        <div class="emphasis">***</div>
+        <br>
+        <h3><u>Resenha de Ernani Fritoli</u></h3>
+        <h4><em>doutor em Literatura Comparada pela USP</em></h4>
+        <p>Multitextualidade: o termo não define mas caracteriza essa pequena biblioteca que é <em>Seis vozes
+          para a fuga</em>. Borgiana, calviniana e pirandelliana, uma biblioteca em que os olhos leem Haas,
+          mas nos ouvidos cochicham e sibilam, trazidas à tona de outros tempos e espaços, fantasmas de
+          tantas vozes – Dante e Pessoa, Hugo e Balzac, Castañeda e Mann, Stoker e Trevisan, Márquez e
+          Lispector, Pavese e Leminski, Freud e Queneau, Ungaretti e Perec... Clássicos e alternativos,
+          assim como os performers que a cada sexto de um sexto assumem e avivam com sua morte ou
+          imortalizam com sua vida uma das vozes que se alternam nos 36 fragmentos desse romance cuja
+          estrutura complexa, simétrica e entrelaçada, imita a de uma fuga bachiana.</p>
+        <div class="emphasis">Exemplo acabado de literatura combinatória,</div> 
+        <div class="emphasis">Seis vozes para a fuga é um romance múltiplo.</div>
+          <p>Cada breve narrativa pode ser lida per se, com uma semi-autonomia de conto. Seis vezes seis vozes se
+          revezam variando estilos que mantêm sempre a tensão de uma prosa ora filosófica ora
+          psicanalítica, técnica ou lírico-poética, sem jamais perder a harmonia, cada vez colorindo uma
+          nova tessela do mosaico que formará, no multitexto, o grande desenho, ou fuga, final (final?).</p>
+        <br>
+        <div class="emphasis">***</div>
+        <br>
+        <h3><u>Resenha de Daniel Lacerda</u></h3>
+        <h4><em>doutor em Estudos Literários pela UFPR</em></h4>
+        <p>“Assim, as admoestações visam sobremodo à entrega, e não à clareza do que se
+          pretende enunciar. Deixemos de ser barrocos”.</p>
+        <p>Extraída de um dos trinta e seis solilóquios (sub-divididos em seis grupos de
+          seis vozes / caracteres cada um) que compõe o romance de estreia de Lucas Haas
+          Cordeiro, o dizer em questão pode, creio, ser tomado como um anti-mote a sintetizar a
+          obra, mais ainda do que a bela citação de Italo Calvino, que lhe serve de abertura. Mas,
+          por que um anti-mote? Porque são precisamente as ‘admoestações’ verborrágicas que
+          perpassam toda a obra, a qual, na verdade, nunca deixa de ser barroca. Muito pelo
+          contrário: o espraiar-se dos solilóquios pelas suas mais de trezentas páginas, ora
+          tergiversando acerca de questões psicanalíticas que afligem os personagens-narradores
+          (todos os relatos são narrados em primeira pessoa), ora vagando por pontos peculiares
+          da Curitiba natal do autor (claro influxo ‘vampiresco’ de Dalton Trevisan, mencionado,
+          direta e indiretamente, em vários pontos das falas), ora, como no fragmento acima
+          citado, tecendo considerações metalinguísticas acerca do próprio fazer literário, atestam
+          claramente sua verve barroquista – o barroco, pérola irregular, no dizer de Severo
+          Sarduy, que caracteriza-se precisamente pela</p>
+        <div class="emphasis">profusão sígnica, sempre mais afeita à entrega</div>
+        <div class="emphasis">do que à clareza de seus enunciados.</div>
+        <p>E o narrar barroquista de Lucas acha-se pautado pela forma musical da fuga, já
+          explicitada em seu título. Tal processo composicional, que tem na obra de Johan
+          Sebastian Bach seu arauto maior, é, aqui, traduzido intersemioticamente para o código
+          verbal, determinando seu teor polifônico, segundo o qual um motivo dominante é
+          inicialmente exposto e, posteriormente, desenvolvido por diversas vozes
+          contrapontísticas. Em <em>Seis Vozes Para a Fuga</em>, o motivo introdutório é um certo ritual
+          ayahuasca, no qual tomaram parte, no réveillon de 2012, todos os trinta e seis actantes
+          dos relatos, os primeiros dos quais começam por descrever suas ‘mirações’, seus
+          envolvimentos sensoriais ali experimentados. A partir de então, os depoimentos
+          contrapõem-se, expandindo-se semântica e sintaticamente.</p>
+        <p>Aos olhos e ouvidos do leitor e ouvinte antenado com as experimentações da
+          prosa contemporânea, talvez o fator mais sedutor da(s) narrativa(s) seja exatamente esta
+          sua polifonia, que lhe dá um tom de inacabamento, de abertura composicional, o qual,
+          tomado de empréstimo da fuga musical (e, é preciso que se diga, desenvolvido de forma
+          personalíssima, incomum para um romance de estreia de um autor tão jovem como
+          Lucas), rompe com a narrativa-contadora-de-estória da tradição do romance ocidental,
+          para alçar o que poderíamos metaforicamente chamar de um vôo cego anti-narrativo, a
+          permear, por exemplo, entre nós, a escritura de um Antonio Geraldo Figueiredo
+          Ferreira, cujo romance também inaugural, intitulado <em>As Visitas que Hoje Estamos</em>,
+          guarda, por seu teor polifônico-contrapontístico, pontos em comum com as vozes em
+          fuga de Lucas Haas Cordeiro.</p>
+        <p>Pois que as ‘admoestações’ verbais destas vozes venham a se desdobrar
+          barroquisticamente em outras invenções, levando a lavra do autor a outros võos tão
+          cegos e, precisamente por sua ‘cegueira’ às demandas da prosa convencional, tão
+          ousados como os deste volume que, por sua ousadia escritural, tão favoravelmente
+          surpreende.</p>
+        <br>
+        <div class="emphasis">***</div>
+        <br>
+        <h3><u>Resenha de Paulo Urban</u></h3>
+        <h4><em>doutor em Estudos Literários pela UFPR</em></h4>
+        <p><em>Seis Vozes para a Fuga</em> é a mais nova obra literária do brilhante escritor curitibano, 
+          também poeta, Lucas Haas Cordeiro, 26 anos, leonino de nascimento, ascendente em Aquário. 
+          Do autor li seu primeiro livro, <em>Sussurro & Codeína</em>, 2006, uma estreia já madura, 
+          e li ainda ano passado nas agradáveis tardes de outono em que, lapiseira em mão, 
+          passei no Embu das Artes, lendo e meditando seus versos, outros poemas seus inéditos, 
+          que me impressionaram dado à densa verve que os perpassa, associada à profundidade dos temas, 
+          sempre estranhos e incomuns, sobre os quais Lucas Haas escolhe 'poetar', e que nos põem</p> 
+          <div class="emphasis">em sintonia com aquele mavioso Cielo, vibrante e forte,</div>
+          <div class="emphasis">cuja melodia nos convida a deixar a prosaica Terra</div>
+          <p>onde vivemos para adentrar no sinistro Hades que nos espera, 
+          a partir do que, viajando por áreas míticas interditas, quem sabe um dia, ascendidos deste abismo de nós mesmos, 
+          possamos migrar redimidos ao centro mandálico do Idílico Conclave dos anjos e arcanjos que nos assistem 
+          - e nos confortam - em nossas humanas agruras, cáusticas e aflitas.</p>
+        <p><em>Seis Vozes para a Fuga</em>, a mais recente produção deste escritor nada romântico, senão fantástico, 
+          é para ser lida com escuta aberta e senestésica. Só que agora, em vez daquele misterioso Cielo 
+          a que sua portentosa poesia dava voz, Lucas Haas, mestre e maestro, 
+          rege um fabuloso coro de 36 vozes que se enredam e se (des)equilibram numa harmonia esquadrinhada 
+          em seis diferentes tonalidades vocais, repleta de acordes impactantes e dissonâncias expectantes 
+          que se resolvem num texto arrebatador de hiperventilado fôlego literário. 
+          Lucas Haas é ainda tradutor e revisor de textos (adoro esta combinação) e, mais que tudo, é arte uraniana em prosa avançada, 
+          impredictable e incomum, um dos arautos ele próprio desses novos tempos de escrita holográfica 
+          que se anunciam nesta nova Era do Aquarismo. Está dado o recado.</p>
+        <br>
+        <img src="https://haascordeiro.neocities.org/images/galeria/seis_vozes_lan%C3%A7amento.JPG">
+        <br>
+        <br>
+        <div class="legenda">A literatura combinatória & a leitura de um tempo caótico</div>
+        <br>
+        <br>
+          
+      </div>
+  
+    <footer>
+        <a href="mailto:luc.cordeiro@gmail.com"><em>luc.cordeiro@gmail.com<em></a>
+    </footer>
+
+    <script>
+      function toggleSubmenu(event, submenuId) {
+        event.preventDefault();
+        const submenu = document.getElementById(submenuId);
+        submenu.classList.toggle('show');
+      }
+    </script>
+  </body>
+</html>
