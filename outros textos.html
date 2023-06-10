@@ -1,117 +1,11 @@
 <html>
+
   <head>
     <meta charset='UTF-8'>
     <title>outros textos</title>
-    <style>
-     
-      body {
-        margin: 0;
-        padding: 0;
-      }
-
-      .container {
-        display: flex;
-        min-height: auto;
-        position: relative;
-        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-      }
-
-      .sidebar {
-        width: 15%;
-        background-color: darkgrey;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: center;
-        padding: 20px;
-        transition: width 0.5s;
-      }
-
-      .sidebar:hover {
-        width: 25%;
-      }
-
-      .sidebar a {
-        text-decoration: none;
-        color: black;
-        font-size: large;
-        margin-bottom: 10px;
-      }
-
-      .sidebar a:hover {
-        color: #555;
-      }
-
-      .submenu {
-        display: none;
-        flex-direction: column;
-        align-items: center;
-      }
-
-      .submenu.show {
-        display: flex;
-      }
-
-      .content {
-        width: 85%;
-        background-color: #fff;
-        padding: 20px;
-        margin-left: 5%;
-        margin-right: 10%;
-        font-size: large;
-        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-      }
-
-      .emphasis {
-        display:flex;
-        font-size:xx-large;
-        font-style: italic;
-        justify-content: center;
-      }
-
-      .legenda{
-        display:flex;
-        font-size:medium;
-        font-style: italic;
-        margin-left: auto;
-        margin-right: auto;
-      }
-
-      img {
-        max-width: 450px;
-        height: auto;
-        margin-left: auto;
-        margin-right: auto;
-      }
-
-      #header-iframe {
-        width: 100%;
-        height: 35%;
-        border: none;
-      }
-
-      a {
-        color:crimson;
-        }
-
-      footer {
-        position:absolute;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        display:flex;
-        align-items: center;
-        justify-content: center;
-        background-color:black;
-        color:white;
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        font-size: small;
-        font-weight: bold;
-        padding:10px;
-        }
-
-    </style>
+    <link rel="stylesheet" href="style.css"/>
   </head>
+
   <body>
     <header>
         <iframe id="header-iframe" src="reveal/h_outros textos.html"></iframe>
@@ -171,12 +65,7 @@
         <u><em>luc.cordeiro@gmail.com</em></u>
     </footer>
 
-    <script>
-      function toggleSubmenu(event, submenuId) {
-        event.preventDefault();
-        const submenu = document.getElementById(submenuId);
-        submenu.classList.toggle('show');
-      }
-    </script>
+    <script src="script.js"></script>
+    
   </body>
 </html>
