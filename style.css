@@ -70,6 +70,11 @@ body {
     margin-right: auto;
   }
 
+.whats {
+    display:flex;
+    flex-direction: row;
+}
+
 img {
     max-width: 350px;
     height: auto;
