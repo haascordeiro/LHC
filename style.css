@@ -113,16 +113,19 @@ img {
   border: none;
 }
 
-#contact-form {
-  box-sizing: border-box;
+.galeria {
+  max-width: 100%;
+  height: auto;
+  padding: 20px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-input, textarea {
-  border: 1px solid;
-  padding: 1.5%;
-  font-size: medium;
-  width: 40%;
+.redes {
+  width: 50px;
 }
+
+
 
 a {
   color: crimson;
