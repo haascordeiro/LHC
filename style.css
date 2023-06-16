@@ -122,10 +122,13 @@ img {
 }
 
 .redes {
-  width: 50px;
+  width: 130px;
 }
 
-
+.network {
+  display: flex;
+  flex-direction: row;
+}
 
 a {
   color: crimson;
